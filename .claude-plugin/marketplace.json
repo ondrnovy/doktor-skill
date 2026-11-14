@@ -1,0 +1,14 @@
+{
+  "name": "doktor-skill",
+  "description": "Skill pro Claude: zdravotní průvodce pro Čechy – výsledky, prevence, data, české zdravotnictví v praxi.",
+  "owner": {
+    "name": "Ondra N"
+  },
+  "plugins": [
+    {
+      "name": "doktor",
+      "source": "./",
+      "description": "Zdravotní průvodce pro Čechy: porozumět výsledkům, připravit se k lékaři, prevence, vlastní data (česky)."
+    }
+  ]
+}

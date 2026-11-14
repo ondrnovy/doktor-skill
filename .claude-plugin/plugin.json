@@ -1,0 +1,9 @@
+{
+  "name": "doktor",
+  "version": "0.1.0",
+  "description": "Zdravotní průvodce pro Čechy: porozumět výsledkům, připravit se k lékaři, prevence, vlastní data (česky).",
+  "author": {
+    "name": "Ondra N"
+  },
+  "license": "MIT"
+}
