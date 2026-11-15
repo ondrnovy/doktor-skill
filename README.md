@@ -5,7 +5,7 @@ a mít zdravotní data celé rodiny pohromadě**. Zná české zdravotnictví v 
 objednat, kde a za kolik si nechat udělat krev, na jakou prevenci máte nárok, co proplácí pojišťovna
 a jak získat vlastní zdravotní dokumentaci.
 
-**Aktuální verze: 0.1.0 (14. 11. 2026).** Přehled změn v [CHANGELOG.md](CHANGELOG.md).
+**Aktuální verze: 0.1.1 (15. 11. 2026).** Přehled změn v [CHANGELOG.md](CHANGELOG.md).
 
 ## Manifest
 

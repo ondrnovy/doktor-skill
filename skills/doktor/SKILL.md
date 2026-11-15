@@ -161,7 +161,9 @@ Pro rozbor nebo doporučení:
 <tabulka námitek a verdiktů, viz reference/oponent.md>
 ```
 
-Logistika (kam se objednat, co je hrazené, jak sehnat data) stačí stručně: co, kde, jak, odkaz na zdroj.
+Logistika (kam se objednat, co je hrazené, jak sehnat data) stačí stručně: co, kde, jak. U částek,
+lhůt, cen a pravidel pojišťoven vždy přepiš do odpovědi **odkaz na oficiální stránku z podkladu**
+a datum ověření, ať si to uživatel může zkontrolovat.
 
 ## Jak mluvit
 

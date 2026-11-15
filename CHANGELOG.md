@@ -1,5 +1,8 @@
 # Změny
 
+## 0.1.1 (15. 11. 2026)
+- U částek, lhůt, cen a pravidel pojišťoven skill vždy uvede odkaz na oficiální stránku a datum ověření (zjištěno testem scénáře 4).
+
 ## 0.1.0 (14. 11. 2026)
 - První verze: postup analýzy a zásady proti podlézání tazateli, oponentura přes skill oponent (ondrnovy/oponent-skill, sada zdravi) s náhradou bez něj,
   podklady k českému zdravotnictví (systém, nárok na data, prevence, příspěvky pojišťoven, laboratoře),
