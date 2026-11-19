@@ -18,4 +18,4 @@ Veřejný skill. Platí pro každou změnu:
 
 ## Vydání
 
-`tools/zabal.sh` vytvoří zip pro claude.ai do `dist/`. Ten se přikládá k GitHub release.
+`tools/zabal.sh` vytvoří do `dist/` zip pro claude.ai ve dvou kopiích: `doktor-<verze>.zip` a `doktor.zip`. K GitHub release přilož **obě**, `doktor.zip` drží stálý odkaz `releases/latest/download/doktor.zip` z README.

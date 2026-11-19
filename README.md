@@ -7,6 +7,8 @@ a jak získat vlastní zdravotní dokumentaci.
 
 **Aktuální verze: 0.1.1 (15. 11. 2026).** Přehled změn v [CHANGELOG.md](CHANGELOG.md).
 
+**[⬇ Stáhnout pro claude.ai](https://github.com/ondrnovy/doktor-skill/releases/latest/download/doktor.zip)** · [Jak nainstalovat](#instalace) · [Ukázka](#ukázka)
+
 ## Manifest
 
 **Lékař má na vás pár minut. Tenhle skill vám pomůže, aby stály za to.**
@@ -43,7 +45,8 @@ nechává vyvrátit nezávislým „oponentem“.
 > datum ověření a odkazy na zdroje.
 >
 > **Jste lékař?** Budu rád za kritiku. Když uvidíte chybu v postupu nebo v tom, co skill radí,
-> [založte issue](https://github.com/ondrnovy/doktor-skill/issues) nebo mi napište.
+> [založte issue](https://github.com/ondrnovy/doktor-skill/issues) nebo napište do
+> [diskuze](https://github.com/ondrnovy/doktor-skill/discussions).
 
 ## Co umí
 
@@ -61,13 +64,80 @@ nechává vyvrátit nezávislým „oponentem“.
 - **Oponent:** s doporučeným skillem [oponent](https://github.com/ondrnovy/oponent-skill) důležitý závěr (riziko, doporučení testu, dávka) nechá vyvrátit nezávislým Claudem v roli
   lékaře a statistika, volitelně i jiným modelem.
 
+## Ukázka
+
+Vymyšlená pacientka, 44 let, nekuřačka, napíše: *„Mám výsledky z preventivky od praktika, říkala,
+že je to v pořádku, ale nic mi nevysvětlila. Co to znamená?“* a přiloží výsledky (glukóza 5,8 mmol/l,
+celkový cholesterol 6,1, LDL 4,0, HDL 1,6, feritin 14 µg/l, ostatní v mezích, tlak 132/84).
+
+<details>
+<summary><b>Odpověď skillu v claude.ai</b> (rozbalte)</summary>
+
+> **Závěr**
+> Praktička má částečně pravdu: nic z toho není akutní a krevní obraz, játra, ledviny i štítná žláza
+> vycházejí dobře. Tři věci si ale zaslouží pozornost, než se na ně zapomene: **LDL a celkový cholesterol**
+> (mírně zvýšené), **glukóza 5,8** (těsně nad mezí) a **feritin 14** (formálně v normě, prakticky na dně).
+> **Jistota:** střední. Nevím, jestli jsi byla nalačno, jaké máš příznaky ani co je v rodině.
+>
+> **Co z toho plyne prakticky**
+> - **Cholesterol:** LDL 4,0 je zvýšený, ale HDL 1,6 a triglyceridy 1,1 jsou dobré. Ve 44 letech,
+>   nekuřačka, tlak pod 140/90, to samo o sobě nevolá po léčbě. Zjisti si 10leté riziko v kalkulátoru
+>   SCORE2 Evropské kardiologické společnosti a vezmi číslo k lékaři.
+> - **Lp(a):** pojišťovna ho hradí jednou při vstupní prohlídce u praktika, pokud ještě nebyl měřen.
+>   Zeptej se, jestli ho máš.
+> - **Glukóza 5,8:** pokud jsi byla nalačno, je to hraniční hodnota, ne cukrovka. Jedno měření nestačí.
+>   Zopakuj nalačno nebo požádej o HbA1c.
+> - **Feritin 14:** je to zásoba železa. Pod 15 µg/l se podle WHO (2020) bere jako vyčerpaná zásoba,
+>   i když laboratorní mez je 13. Řeš to s lékařkou, zvlášť pokud jsi unavená, padají ti vlasy nebo máš
+>   silnou menstruaci. **Železo nezačínej brát naslepo.**
+> - **Tlak 132/84:** jedno měření v ordinaci. Změř si ho doma 7 dní ráno a večer a zapisuj.
+> - **Co se nemusí:** žádné další „velké panely“. Podle většiny těchto hodnot by se nic nezměnilo.
+> - **Příští rok (45 let):** hrazená mamografie, HPV test u gynekologa a test na skryté krvácení
+>   ve stolici.
+>
+> **Proč**
+> - **Argument proti „je to v pořádku“:** všechny tři nálezy jsou mírné, ale nic z toho se samo nespraví.
+> - **Argument pro:** hemoglobin, jaterní testy, ledviny a štítná žláza jsou v pořádku a hodnoty jsou
+>   z jednoho odběru, takže mohou kolísat.
+>
+> **Otázky pro lékaře**
+> 1. Mám Lp(a) změřený? Jaké je moje riziko podle SCORE2?
+> 2. Stačí zopakovat glykémii nalačno, nebo mám mít HbA1c?
+> 3. Proč mám nízký feritin? Mám zkontrolovat krevní obraz znovu?
+> 4. Kdy mám zopakovat lipidy a tlak?
+>
+> **Co potřebuju vědět:** byl odběr nalačno? Léky a doplňky (antikoncepce, železo, biotin)? Silná
+> menstruace, únava? Kdo v rodině měl infarkt, mrtvici nebo cukrovku, a v kolika letech?
+
+Výstup je zkrácený. V plné verzi jsou i odkazy na zdroje, kontrola, že čísla spolu sedí, a co by závěr
+změnilo.
+
+</details>
+
 ## Co budete potřebovat
 
-- **Claude Code** (aplikace pro Mac/Windows nebo příkazová řádka) pro plnou verzi se zdravotní složkou, **nebo**
-- **claude.ai** (web, mobil) pro rozbory nahraných zpráv, rady a přípravu k lékaři, bez trvalé složky.
-- Placené předplatné Claude.
+- **claude.ai** (web, mobilní aplikace) pro rozbory nahraných zpráv, rady a přípravu k lékaři.
+  Podle [nápovědy Anthropicu](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
+  jdou vlastní skilly nahrát i na bezplatném plánu, **nebo**
+- **Claude Code** (aplikace pro Mac/Windows nebo příkazová řádka) pro plnou verzi se zdravotní složkou
+  rodiny. Potřebuje placené předplatné.
 
 ## Instalace
+
+### claude.ai (web a mobil) — nejjednodušší
+
+1. Stáhněte **[doktor.zip](https://github.com/ondrnovy/doktor-skill/releases/latest/download/doktor.zip)**
+   (vždy poslední verze). Zip nerozbalujte.
+2. Na [claude.ai](https://claude.ai) v prohlížeči zapněte v **Nastavení → Capabilities** vytváření souborů
+   a spouštění kódu („Create and edit files“, dřív „Code execution and file creation“). Bez toho skilly nefungují.
+3. Otevřete **Customize → Skills**, klikněte na **+** → **Create skill** → **Upload a skill** a vyberte
+   stažený `doktor.zip`. (Ve starším rozhraní: Nastavení → Capabilities → Skills → Upload skill.)
+4. Zkontrolujte, že je skill `doktor` zapnutý. Od té chvíle ho máte i v mobilní aplikaci.
+5. Vyzkoušejte v novém chatu: „Na jakou prevenci mám nárok? Je mi 40, jsem muž.“ Skill se zapne sám
+   podle tématu.
+
+Nová verze: starý skill v seznamu smažte a nahrajte nový `doktor.zip`. Rozhraní claude.ai se mění;
+aktuální postup je v [nápovědě Anthropicu](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
 ### Claude Code (plugin)
 
@@ -87,11 +157,6 @@ Nebo obojí přes `npx skills add ondrnovy/doktor-skill` a `npx skills add ondrn
 
 Pak Claude Code restartujte. Aktualizace: v `/plugin` na kartě **Marketplaces** vyberte `doktor-skill`
 a zapněte automatické aktualizace.
-
-### claude.ai
-
-Stáhněte `doktor-<verze>.zip` z [posledního vydání](https://github.com/ondrnovy/doktor-skill/releases)
-a nahrajte ho v nastavení claude.ai v části Skills.
 
 ## Jak začít
 
@@ -120,6 +185,8 @@ a pošlete pull request**, rozumné změny se schvalují. Hodí se hlavně:
 
 Jak na to: [CONTRIBUTING.md](CONTRIBUTING.md). Nechcete se učit Git? Stačí
 [založit issue](https://github.com/ondrnovy/doktor-skill/issues/new) a popsat, co je špatně.
+Dotaz, zkušenost nebo nápad patří do [diskuze](https://github.com/ondrnovy/doktor-skill/discussions)
+(stačí účet na GitHubu). **Nikam nepište svoje zdravotní údaje**, issues i diskuze jsou veřejné.
 
 ## Licence
 
