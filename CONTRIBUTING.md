@@ -16,7 +16,7 @@ Díky, že chcete skill zlepšit. Každá oprava pomáhá všem, kdo ho použív
 2. V popisu napište, co se mění a proč, s odkazem na zdroj.
 3. Pull request projdu a rozumné změny schválím. Když něco nebude sedět, napíšu proč.
 
-Úpravy můžete klidně dělat s Claudem. Pravidla pro něj jsou v `CLAUDE.md`, ať je dodrží.
+Úpravy můžete klidně dělat s Claudem. Pravidla pro něj jsou v `.claude/CLAUDE.md`, ať je dodrží.
 
 ## Pravidla pro obsah
 
