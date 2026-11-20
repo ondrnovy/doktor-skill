@@ -169,7 +169,9 @@ Napište třeba:
 ## Soukromí
 
 Zdravotní složka zůstává na vašem disku. Konverzace s Claudem běží přes servery Anthropicu podle nastavení
-vašeho účtu. Ven (oponent jiným modelem, vyhledávání) jde jen anonymizované minimum a jen s vaším souhlasem.
+vašeho účtu. Samotný skill nikam data neposílá a nic neukládá mimo vaši složku. Jediná výjimka je volitelná:
+oponentura jiným modelem (OpenAI Codex přes skill [oponent](https://github.com/ondrnovy/oponent-skill))
+dostane anonymizované zadání bez jmen a rodných čísel, a jen když s tím výslovně souhlasíte.
 Podrobně v [soukromi.md](skills/doktor/reference/soukromi.md).
 
 ## Otevřené vylepšování — přidejte se
