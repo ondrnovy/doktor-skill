@@ -1,5 +1,9 @@
 # Změny
 
+## 0.1.2 (20. 11. 2026)
+- Příkaz `doktor` se instaluje podle návodu `reference/prikaz.md` místo skriptů (repo projde kontrolou adresáře pluginů Anthropicu).
+- Šablona: prázdné složky mají popisné `README.md`, `laborator.csv` Claude založí při prvním výsledku.
+
 ## 0.1.1 (15. 11. 2026)
 - U částek, lhůt, cen a pravidel pojišťoven skill vždy uvede odkaz na oficiální stránku a datum ověření (zjištěno testem scénáře 4).
 

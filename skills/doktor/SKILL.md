@@ -76,6 +76,7 @@ projektu, aby ho uživatel měl i příště.
 | Jak hledat a vážit důkazy, kde čerpat | `reference/metodika.md` |
 | Proč a jak se nenechat zatlačit, příklady chyb | `reference/uvazovani.md` |
 | Struktura zdravotní složky, jak data sbírat | `reference/data.md` |
+| Příkaz `doktor` (otevře Clauda ve zdravotní složce) | `reference/prikaz.md` |
 | Co se kam posílá, anonymizace | `reference/soukromi.md` |
 | Oponentura závěru | `reference/oponent.md` |
 
@@ -179,7 +180,7 @@ Podrobně v `reference/data.md`. Nejdůležitější:
 
 - **`originaly/` je uživatelova** — zprávy a výsledky tak, jak přišly. Ty tam nic neměníš ani nemažeš.
 - Analýzy do `analyzy/` s datem v názvu, úkoly do jednoho `TODO.md`, kontakty na lékaře do `kontakty.md`.
-- Nový laboratorní výsledek → přepiš hodnoty do `data/laborator.csv` (i s jednotkou, mezemi a laboratoří)
+- Nový laboratorní výsledek → přepiš hodnoty do `data/laborator.csv` (když chybí, založ ho s hlavičkou z `reference/data.md`) (i s jednotkou, mezemi a laboratoří)
   a ukaž trend proti předchozím odběrům.
 - Nic se nemaže. Neplatné věci se označí nebo přesunou do `archiv/`.
 

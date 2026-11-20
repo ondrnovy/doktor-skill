@@ -7,7 +7,7 @@ Veřejný skill. Platí pro každou změnu:
 - Nejistoty do sekce `## Nejisté / k ověření` na konci souboru, ne do textu jako fakt.
 - Žádná reklama. Firmy (laboratoře, pojišťovny) popisovat neutrálně, vedle sebe.
 - Česky, krátké věty, prostý jazyk. Data absolutně.
-- Změna chování nebo podkladů → zvýšit verzi v `skills/doktor/VERZE` a `.claude-plugin/plugin.json`
+- Změna chování nebo podkladů → zvýšit verzi v `.claude-plugin/plugin.json` (jediné místo s verzí)
   a zapsat do `CHANGELOG.md`.
 
 ## Pravidelná údržba
@@ -18,4 +18,15 @@ Veřejný skill. Platí pro každou změnu:
 
 ## Vydání
 
-`tools/zabal.sh` vytvoří do `dist/` zip pro claude.ai ve dvou kopiích: `doktor-<verze>.zip` a `doktor.zip`. K GitHub release přilož **obě**, `doktor.zip` drží stálý odkaz `releases/latest/download/doktor.zip` z README.
+Zip pro claude.ai (v repu nejsou skripty: adresář pluginů Anthropicu je od neověřených autorů nepřijímá):
+
+```sh
+ver=$(python3 -c 'import json;print(json.load(open(".claude-plugin/plugin.json"))["version"])')
+mkdir -p dist && rm -f dist/doktor-$ver.zip
+(cd skills && zip -qr ../dist/doktor-$ver.zip doktor -x '*.DS_Store') && cp dist/doktor-$ver.zip dist/doktor.zip
+```
+
+K GitHub release přilož **oba** zipy, `doktor.zip` drží stálý odkaz `releases/latest/download/doktor.zip` z README.
+
+Do repa nepatří skripty ani soubory, které nejsou Markdown, text, JSON, YAML nebo obrázek, jinak neprojde
+validace adresáře pluginů. Kontrola: `claude plugin validate . --strict`.

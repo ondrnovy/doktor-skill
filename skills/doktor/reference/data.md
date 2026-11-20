@@ -109,27 +109,17 @@ Pravidla a formát poznámky jsou v `inbox/README.md` ze šablony.
 Cesta ke zdravotní složce se ukládá do `~/.config/doktor/slozka` (jeden řádek). Díky tomu skill složku
 najde, i když ho uživatel spustí odjinud.
 
-Volitelně příkaz **`doktor`**: v terminálu otevře Clauda rovnou ve zdravotní složce. Na Macu i ikona na plochu.
-Před instalací řekni, co přesně se změní (řádky v `~/.zshrc` / `~/.bashrc` / profilu PowerShellu, případně
-ikona), a instaluj jen na souhlas.
-
-| Systém | Příkaz |
-|---|---|
-| Mac, Linux | `bash SKILL_DIR/tools/prikaz.sh nastav "<složka>"` → `… instaluj` (Mac s ikonou: `… instaluj --plocha`) |
-| Windows | `powershell -ExecutionPolicy Bypass -File SKILL_DIR\tools\prikaz.ps1 nastav "<složka>"` → `… instaluj -Plocha` |
-
-`… stav` ukáže, co je nainstalované, `… odinstaluj` funkci i ikonu odebere. Na Windows se funkce v profilu
-PowerShellu načte jen při zásadách spouštění `RemoteSigned` nebo volnějších (`Get-ExecutionPolicy`).
-Když jsou `Restricted`, zástupce na ploše funguje i tak; změnu zásad (`Set-ExecutionPolicy -Scope CurrentUser
-RemoteSigned`) jen se souhlasem uživatele. Windows verze zatím nebyla vyzkoušená na skutečných Windows.
+Volitelně příkaz **`doktor`**: v terminálu otevře Clauda rovnou ve zdravotní složce, na Macu i ikonou
+na ploše. Postup instalace, stavu a odinstalace je v `reference/prikaz.md`.
 
 ## Založení
 
 1. Zeptej se, pro koho složka je (jména členů rodiny) a **kde bude** (sekce „Kde bude složka“).
 2. Zkopíruj `SKILL_DIR/template/` do zvolené složky, složku `Osoba/` jednou pro každého člena a přejmenuj ji.
+   Soubory `README.md` v prázdných podsložkách šablony jen popisují, co do složky patří; klidně je nech.
    `inbox/` ponech jen u složky na Google Drivu.
-3. Ulož cestu (`prikaz.sh nastav` / `prikaz.ps1 nastav`) a nabídni příkaz `doktor`.
+3. Ulož cestu do `~/.config/doktor/slozka` a nabídni příkaz `doktor` (`reference/prikaz.md`).
 4. Doplň `ZDRAVI.md` (kdo je kdo, pojišťovna, registrující lékaři) a vyplň `profil.md` rozhovorem.
 5. Projděte spolu kontrolní seznam „Kde data sehnat“ a do `TODO.md` zapiš, co se má stáhnout nebo vyžádat.
-6. Když uživatel nahraje originály, přepiš laboratorní výsledky do `laborator.csv` a udělej první přehled:
+6. Když uživatel nahraje originály, přepiš laboratorní výsledky do `laborator.csv` (založ ho s hlavičkou z oddílu `laborator.csv` výš) a udělej první přehled:
    co je v pořádku, co sledovat, jaká prevence chybí (`prevence.md`).
